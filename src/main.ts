@@ -21,7 +21,8 @@ export async function bootstrap() {
       'http://localhost:5173',
       'http://dashboard.aesthetichubpro.com',
       'http://admin.aesthetichubpro.com',
-      'http://aesthetichubpro.com'
+      'http://aesthetichubpro.com',
+      'http://75.119.142.31:3007'
     ],
     credentials: true,
   });
