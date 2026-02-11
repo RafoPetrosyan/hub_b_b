@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Cancellation Policy",
+    "slug": "cancellation",
+    "description": "Set rules for appointment cancellations",
+    "default_state": true,
+    "default_text": null,
+    "is_additional": false,
+    "fields": [
+      {
+        "key": "window",
+        "label": "Cancellation window",
+        "type": "select",
+        "required": true,
+        "options": ["72 hours", "48 hours", "24 hours", "12 hours", "4 hours"]
+      },
+      {
+        "key": "amount_type",
+        "label": "Amount type",
+        "type": "select",
+        "required": true,
+        "options": ["fixed", "percent"]
+      },
+      {
+        "key": "amount",
+        "label": "Amount",
+        "type": "number",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "No-Show Policy",
+    "slug": "no-show",
+    "description": "Set fees for missed appointments",
+    "default_state": true,
+    "default_text": null,
+    "is_additional": false,
+    "fields": [
+      {
+        "key": "fee_type",
+        "label": "Fee type",
+        "type": "select",
+        "required": true,
+        "options": ["fixed", "percent"]
+      },
+      {
+        "key": "fee",
+        "label": "Fee",
+        "type": "number",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "Lateness Policy",
+    "slug": "lateness",
+    "description": null,
+    "default_state": true,
+    "default_text": null,
+    "is_additional": true,
+    "fields": []
+  },
+  {
+    "name": "Payment Policy",
+    "slug": "payment",
+    "description": null,
+    "default_state": true,
+    "default_text": null,
+    "is_additional": true,
+    "fields": []
+  }
+]
