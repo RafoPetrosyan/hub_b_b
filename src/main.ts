@@ -336,7 +336,7 @@ Quick navigation:
   const httpAdapter = app.getHttpAdapter().getInstance();
   httpAdapter.use('/public', express.static(path.join(process.cwd(), 'public')));
 
-  await app.listen(3000);
+  await app.listen(3005);
 }
 
 function setupPostmanExport(
